@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.cyber_net.apps.TopupCreate">
+<TextView
+    android:layout_marginTop="40dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="#000000"
+    android:textStyle="bold"
+    android:textSize="15sp"
+    android:text="NOMINAL"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:hint="Masukan Nominal yang Ingin di TOPUP"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:id="@+id/edt_nominal"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="match_parent"
+        android:onClick="ajukan_topup"
+        android:layout_height="wrap_content"
+        android:text="TOPUP"/>
+</LinearLayout>

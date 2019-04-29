@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/value_16dp"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context="com.example.cyber_net.apps.menu.ppob.Detail_ppob">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Nomor"
+        android:id="@+id/detail_nomor"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textSize="20sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/value_10dp"
+        android:text="Nama"
+        android:id="@+id/detail_nama"
+        android:textColor="@color/colorPrimary" />
+    <TextView
+        android:layout_width="match_parent"
+        android:textSize="20sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/value_10dp"
+        android:text="Jumlah Tagihan"
+        android:id="@+id/detail_jumlah"
+        android:textColor="@color/colorPrimary" />
+</LinearLayout>

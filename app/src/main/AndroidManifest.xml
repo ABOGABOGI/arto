@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.cyber_net.apps">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- if you want to load images from a file OR from the internet -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_bpr"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo_bpr"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".menu.menu2.Pulsa"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".menu.menu2.Kereta"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".menu.ppob.PascaBayar"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".menu.ppob.PDAM" />
+        <activity android:name=".menu.ppob.TELKOM" />
+        <activity android:name=".menu.ppob.Gas" />
+        <activity android:name=".menu.ppob.TV" />
+        <activity android:name=".menu.ppob.Asuransi" />
+        <activity android:name=".menu.ppob.Listrik" />
+        <activity android:name=".menu.ppob.EMoney" />
+        <activity android:name=".menu.menu2.Hotel" />
+        <activity android:name=".menu.menu2.Pesawat" />
+        <activity android:name=".menu.menu2.item.ListKereta" />
+        <activity android:name=".menu.menu2.Pelni" />
+        <activity
+            android:name=".menu.menu2.Wisata"
+            android:label="@string/title_activity_wisata"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".login.Login"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".Home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".menu.menu2.Tabungan" />
+        <activity android:name=".menu.menu2.detail.DetailTabungan" />
+        <activity android:name=".menu.menu2.detail.DetailPembiayaan" />
+        <activity android:name=".menu.menu2.Pembiayaan" />
+        <activity android:name=".menu.ppob.Detail_ppob" />
+        <activity android:name=".menu.ppob.MULTIFINANCE" />
+        <activity android:name=".menu.ppob.Pajak" />
+        <activity android:name=".Topup" />
+        <activity android:name=".TopupCreate" />
+        <activity android:name=".Signin" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity android:name=".splash.Splash" android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

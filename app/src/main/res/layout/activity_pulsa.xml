@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:padding="@dimen/value_16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btn_pulsa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/background"
+                app:srcCompat="@drawable/ic_phone_android_black_24dp" />
+
+            <View
+                android:id="@+id/v_1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/value_8dp"
+                android:background="@color/colorPrimary" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btn_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/background"
+                app:srcCompat="@drawable/ic_language_black_24dp" />
+
+            <View
+                android:id="@+id/v_2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/value_8dp"
+                android:background="@color/colorPrimary" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_botif"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ISI PULSA"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="@dimen/value_140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/value_10dp"
+        android:text="Pilih Operator"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <Spinner
+        android:id="@+id/sp_operator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_border"
+        android:padding="@dimen/value_10dp" />
+
+    <TextView
+        android:layout_width="@dimen/value_140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/value_10dp"
+        android:text="Pilih Nominal"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <Spinner
+        android:id="@+id/sp_nominal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_border"
+        android:padding="@dimen/value_10dp" />
+    <TextView
+        android:layout_width="@dimen/value_140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/value_10dp"
+        android:text="Harga"
+        android:textColor="@color/colorPrimaryDark" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="000"
+        android:textSize="18sp"
+        android:id="@+id/pulsa_harga"
+        android:textStyle="bold"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/value_10dp"
+        android:text="Nomer Handphone"
+        android:textColor="@color/colorPrimary" />
+
+    <EditText
+        android:id="@+id/edt_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_border"
+        android:hint="0812xxxxx"
+        android:inputType="phone"
+        android:padding="@dimen/value_10dp" />
+
+</LinearLayout>

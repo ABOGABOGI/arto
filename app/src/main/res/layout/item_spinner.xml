@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:layout_marginTop="8dp"
+    android:background="@drawable/spinner_border">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textColor="@color/black"
+    android:id="@+id/item_keterangan"
+    android:text="keterangan"/>
+    <TextView
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:textStyle="bold"
+        android:layout_height="match_parent"
+        android:id="@+id/item_harga"
+        android:text="harga"/>
+</LinearLayout>
