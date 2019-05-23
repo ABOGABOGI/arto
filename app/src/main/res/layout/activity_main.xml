@@ -151,8 +151,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:onClick="topup"
                         android:gravity="center"
+                        android:onClick="topup"
                         android:orientation="vertical">
 
                         <ImageView
@@ -172,73 +172,79 @@
 
                 </LinearLayout>
 
-                <com.synnapps.carouselview.CarouselView
-                    android:id="@+id/slider_iklan"
+                <android.support.v4.widget.SwipeRefreshLayout
+                    android:id="@+id/refresh"
                     android:layout_width="match_parent"
-                    android:layout_height="200dp"
-                    app:fillColor="#FFFFFFFF"
-                    app:pageColor="#00000000"
-                    app:radius="6dp"
-                    app:slideInterval="3000"
-                    app:strokeColor="#FF777777"
-                    app:strokeWidth="1dp"/>/>
+                    android:layout_height="wrap_content">
 
-                <android.support.v7.widget.RecyclerView
-                    android:id="@+id/rv_menu"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    <com.synnapps.carouselview.CarouselView
+                        android:id="@+id/slider_iklan"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        app:fillColor="#FFFFFFFF"
+                        app:pageColor="#00000000"
+                        app:radius="6dp"
+                        app:slideInterval="3000"
+                        app:strokeColor="#FF777777"
+                        app:strokeWidth="1dp" />/>
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/value_16dp"
-                    android:layout_marginTop="@dimen/value_10dp"
-                    android:text="produk bpr arto moro"
-                    android:textAllCaps="true"
-                    android:textStyle="bold" />
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_menu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
 
-                <android.support.v7.widget.RecyclerView
-                    android:id="@+id/rv_produk"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/value_16dp"
+                        android:layout_marginTop="@dimen/value_10dp"
+                        android:text="produk bpr arto moro"
+                        android:textAllCaps="true"
+                        android:textStyle="bold" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Semua Produk >>"
-                    android:textStyle="bold"
-                    android:layout_marginRight="@dimen/value_10dp"
-                    android:textAlignment="textEnd"
-                    android:textColor="@color/colorPrimary"
-                    android:gravity="end" />
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_produk"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/value_16dp"
-                    android:layout_marginTop="@dimen/value_10dp"
-                    android:text="@string/news_mora"
-                    android:textAllCaps="true"
-                    android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/value_10dp"
+                        android:gravity="end"
+                        android:text="Semua Produk >>"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold" />
 
-                <android.support.v7.widget.RecyclerView
-                    android:id="@+id/rv_news"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/value_16dp"
+                        android:layout_marginTop="@dimen/value_10dp"
+                        android:text="@string/news_mora"
+                        android:textAllCaps="true"
+                        android:textStyle="bold" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/value_16dp"
-                    android:layout_marginTop="@dimen/value_10dp"
-                    android:text="video bpr arto moro"
-                    android:textAllCaps="true"
-                    android:textStyle="bold" />
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_news"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
 
-                <android.support.v7.widget.RecyclerView
-                    android:id="@+id/rv_video"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/value_16dp"
+                        android:layout_marginTop="@dimen/value_10dp"
+                        android:text="video bpr arto moro"
+                        android:textAllCaps="true"
+                        android:textStyle="bold" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_video"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </android.support.v4.widget.SwipeRefreshLayout>
             </LinearLayout>
         </android.support.v4.widget.NestedScrollView>
 

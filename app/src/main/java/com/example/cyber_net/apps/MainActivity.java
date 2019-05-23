@@ -11,6 +11,7 @@ import android.support.design.widget.BottomNavigationView;
 import android.support.design.widget.BottomSheetDialog;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.widget.NestedScrollView;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
@@ -64,7 +65,7 @@ import static com.example.cyber_net.apps.helper.ListMenu.getMenu;
 import static com.example.cyber_net.apps.helper.ListMenu.getPPOB;
 import static com.example.cyber_net.apps.helper.ListMenu.link;
 
-public class MainActivity extends AppCompatActivity implements MenuAdapter.OnSelect{
+public class MainActivity extends AppCompatActivity implements MenuAdapter.OnSelect {
 
     @BindView(R.id.rv_menu)
     RecyclerView rvMenu;
@@ -102,6 +103,8 @@ public class MainActivity extends AppCompatActivity implements MenuAdapter.OnSel
     String id, base;
     @BindView(R.id.slider_iklan)
     CarouselView sliderIklan;
+    @BindView(R.id.refresh)
+    SwipeRefreshLayout refresh;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -150,7 +153,19 @@ public class MainActivity extends AppCompatActivity implements MenuAdapter.OnSel
         sliderIklan.setImageClickListener(new ImageClickListener() {
             @Override
             public void onClick(int position) {
-                Toast.makeText(MainActivity.this, "Clicked item: "+ position, Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "Clicked item: " + position, Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        refresh.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                //news
+                getIklan();
+                getBerita();
+                getVideo();
+                getProduk();
+                refresh.setRefreshing(false);
             }
         });
     }
